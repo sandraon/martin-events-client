@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'home#index'
   resources :customer_events
   resources :event_categories
   resources :categories
