@@ -1,2 +1,0 @@
-class CustomerEvent < ApplicationRecord
-end
