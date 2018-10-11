@@ -31,4 +31,4 @@
 /config/master.key
 
 /ruby-env
-sendgrid.env
+secret.env
