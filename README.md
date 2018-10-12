@@ -42,7 +42,7 @@ You'll need a file, where you must export:
 * SENDGRID_API_KEY, what you'll get from https://sendgrid.com, where you have to sign up or log in and create new API KEY
 * RECAPTCHA_SITE_KEY and RECAPTCHA_SECRET_KEY, what you'll get from https://www.google.com/recaptcha/, where you have to sign up or log in and register a new site Note: Use localhost or 127.0.0.1 in domain if using localhost:3000.
 
-For example, create file "secretkeys.env":
+Create file "secret.env":
 ```
 export SENDGRID_API_KEY='yourkey'
 export RECAPTCHA_SITE_KEY='yourkey'
@@ -50,7 +50,7 @@ export RECAPTCHA_SECRET_KEY='yourkey'
 ```
 To install these keys:
 ```
-source yourfilename.env
+source secret.env
 ```
 Starting rails server to see your result in a browser:
 ```
