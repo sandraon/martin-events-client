@@ -19,19 +19,38 @@ A step by step series of examples that tell you how to get a development up and 
 
 Cloning git repo:
 ```
-git clone https://github.com/sinivaal/martin-events-client
+git clone https://github.com/sandraon/martin-events-client
 ```
 Opening the repo root folder:
 ```
 cd martin-events-client
 ```
-Important install (dont' ask why):
+Important install:
 ```
 bundle install
 ```
 Making database:
 ```
 rake db:migrate
+```
+Adding default data to database:
+```
+rake db:seed
+```
+### Installing important keys:
+You'll need a file, where you must export:
+* SENDGRID_API_KEY, what you'll get from https://sendgrid.com, where you have to sign up or log in and create new API KEY
+* RECAPTCHA_SITE_KEY and RECAPTCHA_SECRET_KEY, what you'll get from https://www.google.com/recaptcha/, where you have to sign up or log in and register a new site Note: Use localhost or 127.0.0.1 in domain if using localhost:3000.
+
+For example, create file "secretkeys.env":
+```
+export SENDGRID_API_KEY='yourkey'
+export RECAPTCHA_SITE_KEY='yourkey'
+export RECAPTCHA_SECRET_KEY='yourkey'
+```
+To install these keys:
+```
+source yourfilename.env
 ```
 Starting rails server to see your result in a browser:
 ```
@@ -46,11 +65,11 @@ rails s
 
 ## Versioning
 
-We use [Git](https://git-scm.com/) for versioning. For the versions available, see the [martin-events-client](https://github.com/sinivaal/martin-events-client). 
+We use [Git](https://git-scm.com/) for versioning. For the versions available, see the [martin-events-client](https://github.com/sandraon/martin-events-client). 
 
 ## Authors
 
-See the list of [contributors](https://github.com/sinivaal/martin-events-client/graphs/contributors) who participated in this project.
+See the list of [contributors](https://github.com/sandraon/martin-events-client/graphs/contributors) who participated in this project.
 
 ## License
 
