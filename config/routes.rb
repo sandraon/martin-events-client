@@ -2,6 +2,7 @@ require 'sidekiq/web'
 Rails.application.routes.draw do
   get 'api/about'
   get 'contact/index'
+  post 'api/haiku'
   mount Sidekiq::Web => '/sidekiq'
   devise_for :users
   root 'home#index'
