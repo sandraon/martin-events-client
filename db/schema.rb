@@ -18,14 +18,6 @@ ActiveRecord::Schema.define(version: 2018_09_28_091715) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "customer_events", force: :cascade do |t|
-    t.integer "customer_id"
-    t.integer "event_id"
-    t.integer "payment_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "event_categories", force: :cascade do |t|
     t.integer "event_id"
     t.integer "category_id"
