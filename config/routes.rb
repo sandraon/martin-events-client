@@ -1,5 +1,6 @@
 require 'sidekiq/web'
 Rails.application.routes.draw do
+  get 'api/about'
   get 'contact/index'
   mount Sidekiq::Web => '/sidekiq'
   devise_for :users
